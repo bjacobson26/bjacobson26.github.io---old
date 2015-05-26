@@ -1,0 +1,25 @@
+input.ctext {
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+#talk {
+	text-align: center;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: white;
+}
+#send {
+	display: block;
+	margin: auto;
+	margin-top:1%;
+	background-color: rgb(0, 130, 210);
+	color: black;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-weight: bold;
+	width: 80px;
+	height: 40px;
+	border-radius: 10px;
+}
+#send:hover{
+	background-color: rgb(0, 158, 255);
+}

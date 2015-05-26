@@ -1,0 +1,508 @@
+@font-face {
+    font-family: 'molotregular';
+    src: url('Molot-webfont.eot');
+    src: url('Molot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Molot-webfont.woff') format('woff'),
+         url('Molot-webfont.ttf') format('truetype'),
+         url('Molot-webfont.svg#molotregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+body {
+	height: 10000px;
+  max-width: 1309px;
+  background-color: black;
+  z-index: 0;
+}
+#scrollUp{
+  font-family: 'molotregular';
+  position: absolute;
+  bottom: 0;
+  font-size: 250%;
+  left: 24%;
+
+}
+
+#space{
+  bottom: 6000px;
+  top:850px;
+  width: 100%;
+  position: absolute;
+  background-image: url("../assets/space.jpg");
+
+}
+#socialmediabar{
+  text-align: center;
+}
+img#linkedin {
+  width: 60px;
+}
+img#instagram {
+  width: 55px;
+}
+img#github{
+  width: 55px;
+  margin: 1%;
+
+}
+
+
+a {
+  color: white;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+a:hover {
+  color:#0BDE40;
+}
+
+
+
+a.button.secondary {
+  z-index: 5;
+  background-color: white;
+}
+
+h1 {
+  font-family: 'molotregular', Arial, sans-serif;
+    margin-top: 2%;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+}
+#homelinks{
+display: block;
+text-align: center;
+}
+
+.links {
+	text-align: center;
+	display: inline-block;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  margin-top: 10%;
+  font-size: 40px;
+  margin-top: 15%;
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes mymove {
+    0%   {right: 0px;}
+    100% {right: 100%; width: 1%}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {right: 0px;}
+    100% {right: 100%;}
+}
+@-webkit-keyframes xwing {
+    0%   {left: 0px; width: 0%;}
+    100% {left: 100%; width: 50%}
+}
+
+/* Standard syntax */
+@keyframes xwing {
+    0%   {left: 0px; width: 0%;}
+    100% {left: 100%; width: 50%}
+}
+@-webkit-keyframes iss {
+    0%   {right: 0px;}
+    50% {right: 50%;}
+    100% {right: 0px;}
+}
+
+/* Standard syntax */
+@keyframes iss {
+    0%   {right: 10px;}
+    50% {right: 50%;}
+    100% {right: 10px;}
+}
+@-webkit-keyframes isss {
+    0%   {left: 10px;}
+    50% {left: 50%;}
+    100% {left: 10px;}
+}
+
+/* Standard syntax */
+@keyframes isss {
+    0%   {left: 0px;}
+    50% {left: 50%;}
+    100% {left: 0px;}
+}
+@-webkit-keyframes dog {
+    0%   {bottom: 2%;}
+    100% {bottom: 90%; width: 0%}
+}
+
+/* Standard syntax */
+@keyframes dog {
+    0%   {bottom: 2%;}
+    100% {bottom: 90%; width: 0%}
+}
+@-webkit-keyframes ufo {
+    0%   {left: 100px; bottom: 5000px }
+    25% {left: 200px; bottom: 5100px}
+    50% {left: 250px; bottom: 5000px}
+    75% {left: 200px; bottom: 4900px}
+    100% {left: 100px; bottom: 5000px}
+}
+
+/* Standard syntax */
+@keyframes ufo {
+   0%   {left: 50px; bottom: 5000px }
+    25% {left: 100px; bottom: 5200px}
+    50% {left: 150px; bottom: 5000px}
+    75% {left: 100px; bottom: 4800px}
+    100% {left: 50px; bottom: 5000px}
+}
+
+#cloud1 {
+  position: absolute;
+  bottom: 1700px;
+  z-index: 3;
+  left: 10px;
+
+}
+#cloud2 {
+  position: absolute;
+  bottom: 2700px;
+  right: 0;
+  z-index: 1;
+
+}
+#ufo {
+  position: absolute;
+  bottom: 5000px;
+  left: 50px;
+  z-index: 2;
+  width: 20%;
+  -webkit-animation: ufo 20s infinite; /* Chrome, Safari, Opera */ 
+    animation: ufo 20s infinite;
+
+
+}
+
+
+
+#spaceship {
+	left: 45%;
+	width: 10%;
+	top: 40%;
+	position: fixed;
+	text-align: center;
+	z-index: 2;
+}
+
+#fire {
+	position: fixed;
+	display: none;
+	left: 45%;
+	z-index: 1;
+	top: 66%;
+	width: 10%;
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+#deathstar {
+	position: absolute;
+	top: 20%;
+	left: 2%;
+	z-index: 1;
+}
+
+#xwing {
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	right: 0;
+	-webkit-animation: xwing 20s infinite; /* Chrome, Safari, Opera */ 
+    animation: xwing 20s infinite;
+}
+
+#iss {
+	position: absolute;
+	top: 28%;
+	width: 30%;
+	right: 0;
+		-webkit-animation: iss 100s infinite; /* Chrome, Safari, Opera */ 
+    animation: iss 100s infinite;
+
+
+}
+
+#ground {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+#groundimg {
+	width: 100%;
+  height: 800px;
+}
+
+#sky {
+	color: white;
+	position: absolute;
+	width: 100%;
+	height: 6000px;
+	bottom: 730px;
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #060709 0%, #0CB7FC 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #060709 0%, #0CB7FC 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #060709 0%, #0CB7FC 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #060709), color-stop(1, #0CB7FC));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #060709 0%, #0CB7FC 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #060709 0%, #0CB7FC 100%);
+}
+#bluepatch {
+}
+
+#plane {
+	width: 100%;
+	position: absolute;
+	bottom: 3000px;
+	z-index: 1;
+	left: 10px;
+}
+#planeIMG {
+  width: 20%;
+  position: absolute;
+  right: 0px;
+  -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */ 
+    animation: mymove 10s infinite;
+}
+
+#astroids {
+  position: absolute;
+  width: 100%;
+  top: 2874px;
+  z-index: 3;
+  left: -122px;
+}
+#astroids2 {
+  position: absolute;
+  width: 100%;
+  top: 2874px;
+  z-index: 1;
+	right: 0;
+  -webkit-animation: iss 100s infinite; /* Chrome, Safari, Opera */ 
+    animation: iss 100s infinite;
+}
+#astroids3 {
+  position: absolute;
+  width: 100%;
+  top: 2874px;
+  left:0;
+  z-index: 1;
+  -webkit-animation: isss 100s infinite; /* Chrome, Safari, Opera */ 
+    animation: isss 100s infinite;
+}
+#dog {
+	position: absolute;
+	z-index: 2;
+	bottom: 2%;
+	width: 15%;
+	right: 2%;
+	 -webkit-animation: dog 60s; /* Chrome, Safari, Opera */ 
+    animation: dog 60s;
+}
+
+.container {
+	width: 100%;
+	top:0;
+	position: absolute;
+	z-index: 5;
+	background-color: black;
+	display:block;
+	margin: 0;
+	height: 850px;
+}
+.loading {
+  width: 100%;
+  top:0;
+  position: absolute;
+  z-index: 6;
+  background-color: black;
+  display:block;
+  margin: 0;
+  height: 850px;
+}
+
+
+h1#scrollup {
+  position: absolute;
+  bottom: 1px;
+  margin-left: 20%;
+  font-size: 50px;
+  z-index: 3;
+
+  font-weight: bold;
+}
+
+#blackholediv{
+	display: block;
+	margin: auto;
+	text-align: center;
+	width: 100px;
+}@-ms-keyframes spin { 
+        from { 
+            -ms-transform: rotate(0deg); 
+        } to { 
+            -ms-transform: rotate(360deg); 
+        }
+    }
+    @-moz-keyframes spin { 
+        from { 
+            -moz-transform: rotate(0deg); 
+        } to { 
+            -moz-transform: rotate(360deg); 
+        }
+    }
+    @-webkit-keyframes spin { 
+        from { 
+            -webkit-transform: rotate(0deg); 
+        } to { 
+            -webkit-transform: rotate(360deg); 
+        }
+    }
+    @keyframes spin { 
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(360deg); 
+        }
+    }
+#blackhole {
+	    width: 50%;
+  position: absolute;
+  top: 8.6%;
+  display: block;
+  border-radius: 50%;
+  left: 25.5%;
+  z-index: 1;
+
+  -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  /* ------ Media Queries for Smaller Screens ----- */
+
+  @media screen and (max-width: 450px){
+
+#scene {
+  display: none;
+}
+body{
+  height: 680px;
+}
+.container {
+  height: 680px;
+}
+#loading{
+  display: none;
+}
+
+.links{
+  display: block;
+  margin-top: 3%;
+}
+
+
+
+
+}
+  @media screen and (min-width: 450px) and (max-width:750px){
+    #scene{
+      display: none;
+    }
+    body{
+  height: 680px;
+}
+.container {
+  height: 680px;
+}
+#loading{
+  display: none;
+}
+
+
+    
+  }
+
+@media screen and (min-width: 750px) and (max-width:900px){
+  #scene{
+      display: none;
+    }
+    body{
+  height: 680px;
+}
+.container {
+  height: 680px;
+}
+#loading{
+  display: none;
+}
+
+  #astroids {
+    top: 3025px;
+  }
+  #astroids2 {
+   top: 3077px;
+
+  }
+  #astroids3 {
+     top: 3112px;
+
+  }
+  
+}
+@media screen and (min-width: 900px) and (max-width:1150px){
+  #scrollUp{
+    left: 23%;
+  }
+}
+
+}
+}
+
+
+
+

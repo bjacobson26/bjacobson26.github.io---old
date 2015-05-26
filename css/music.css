@@ -1,0 +1,21 @@
+.menuBtn {
+	width: 60px;
+}
+.menuBtn:hover {
+	width: 65px;
+}
+#showMenu {
+	  margin-top: 1%;
+  margin-left: 1%;
+}
+.main, .wrapper, div .container {
+	background-color: black;
+}
+#logo{
+	display: block;
+	margin:auto;
+	width: 25%;
+}
+.outer-nav.horizontal a:hover {
+  color:#0BDE40;
+}

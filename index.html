@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bo Jacobson</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body onload="window.location.hash = 'footer'">
+
+
+    <div id="loading" class="loading">
+      <h1 style="text-align:center; margin-top:25%;">Preparing for lift-off...</h1>
+    </div>
+    
+    <div class="container">
+    <h1 style=" text-align: center; color:white;">Bo Jacobson</h1>
+    <h3 style=" text-align:center;color:White;">Musician - <span id="tag">Web Developer</span> - Friend</h3>
+    <div id="socialmediabar">
+      <a href="https://www.linkedin.com/pub/bo-jacobson/96/67a/829?trk=pub-pbmap"><img id="linkedin" src="assets/linkedin.png"></a>
+      <a href="https://github.com/bjacobson26"><img id="github" src="assets/githubicon.png"></a>
+      <a href="https://instagram.com/itsmrbojangles/"><img id="instagram" src="assets/instagram.png"></a>
+    </div>
+
+    <ul id="homelinks" class="animate fadeIn">
+      <li class="links"><a href="index.html">Home</a></li>
+      <li class="links"><a href="code.html">Code</a></li>
+      <li class="links"><a href="music.html">Music</a></li>
+      <li class="links"><a href="bio.html">Bio</a></li>
+      <li class="links"><a href="contact.html">Contact</a></li><br> 
+    </ul>  
+    </div>
+    <div id="scene">
+    <div id="space"><img src="assets/space.jpg"></div>
+    <div id="blackholediv"><img id="blackhole" src="assets/blackhole.png"></div>
+    <div id="iss"><img src="assets/ISS.png"></div>
+    <div id="deathstar"><img src="assets/deathstar.png"></div>
+    <div id="xwing"><img src="assets/xwing.png"></div>
+    <div id="plane"><img id="planeIMG" class="animated infinite fadeInRight" src="assets/cartoon-airplane.svg"></div>
+    <div id="spaceship" class=""><img src="assets/rocket.png"></div>
+    <div id="fire" class=""><img src="assets/fire.png"></div>
+    <div id="astroids"><img src="assets/astroids.png"></div>
+    <div id="astroids2"><img src="assets/astroids.png"></div>
+    <div id="astroids3"><img src="assets/astroids.png"></div>
+    <div id="dog"><img src="assets/dogballoon.png"></div>
+    <div id="ufo"><img src="assets/ufo.png"></div>
+    <div id="cloud1"><img src="assets/clouds.png"></div>
+    <div id="cloud2"><img src="assets/clouds.png"></div>
+    <div id="sky"></div>
+    <div id="ground"><img id="groundimg" src="assets/landscape.jpg"></div>
+    <h1 id="scrollUp" class="animated flipInX">Scroll up to launch the rocket...</h1>
+    <div id="footer" style="position:absolute; bottom:0;"></div>
+    <div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+
+    <script>
+      $(document).foundation();
+      var footer = document.getElementById('footer');
+
+      var fire = document.getElementById('fire');
+
+      var rocket = document.getElementById('spaceship');
+
+      var links = document.getElementById('homelinks');
+
+      var tag = document.getElementById('tag');
+
+      var ufo = document.getElementById('ufo');
+
+
+
+      // AUDIO 
+      var misirlou = new Audio('assets/misirlou.mp3');
+        misirlou.volume = 0.2;
+
+      var rocketsfx = new Audio('assets/rocketsfx.mp3');
+      rocketsfx.volume = 0.1;
+
+      var falling = new Audio('assets/falling.mp3');
+       falling.volume = 0.2;
+
+      var click = new Audio('assets/click.mp3');
+
+      var theramin = new Audio('assets/theramin.mp3');
+        theramin.volume = 0.1;
+
+      var loading = document.getElementById('loading');
+
+      setTimeout(function(){ 
+        loading.style.display = "none";
+       }, 3000);
+
+
+      (function () {
+    var previousScroll = 0;
+
+
+
+
+    $(window).scroll(function(){
+       var currentScroll = $(this).scrollTop();
+       if (currentScroll > previousScroll){
+
+           fire.style.display = "none";
+           rocketsfx.pause();
+
+
+       }
+       else if(currentScroll > 9320){
+          fire.style.display = "none";
+           rocketsfx.pause();
+       }
+        else {
+          fire.style.display = "block";
+          rocketsfx.play();
+       }
+       previousScroll = currentScroll;
+       console.log(currentScroll);
+       if(currentScroll < 1000){
+        console.log('blackhole!');
+        rocket.className = "animated zoomOut";
+        fire.style.display = "none";
+        rocketsfx.pause();        
+       }
+       else {
+        rocket.style.display = "block";
+        rocket.className = "";
+       }
+
+       if(currentScroll < 700){
+        links.className = "animated zoomInDown"
+        tag.className = "animated bounce"
+        misirlou.play();
+       }
+       else {
+        links.className = "";
+        tag.className = "";
+       }
+       if(currentScroll < 1001 && currentScroll > 990){
+        falling.play(1);
+        rocketsfx.pause();
+       }
+
+       ufo.onmouseover = function(){
+      theramin.play();
+     }
+       
+    });
+}());
+
+
+    </script>
+  </body>
+</html>
